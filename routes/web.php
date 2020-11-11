@@ -16,32 +16,41 @@ use App\Http\Controllers\PostsController;
 */
 
 Route::get('/', function () {
-    //return view('welcome');
-    //$post=new Post();
-    //$post->title ='test title';
-    //$post->content='test content';
-    //$post->save();
+//    return view('welcome');
+//    $post=new Post();
+//    $post->title ='test title';
+//    $post->content='test content';
+//    $post->save();
+
 //    Post::create([
 //        'title'=>'test title1',
 //        'content'=>'test content1'
 //    ]);
+
 //    $post=Post::all();
 //    dd($post);
+
 //    $post=Post::find(1);
 //    dd($post);
+
 //    $post=Post::where('id','<',10)->orderBy('id','DESC')->get();
 //    dd($post);
+
 //    $post=Post::find(1);
 //    $post->update([
 //        'title'=>'updated title',
 //        'content'=>'updated content',
 //    ]);
+
 //    $post=Post::find(1);
 //    $post->title='saved title';
 //    $post->content='saved content';
 //    $post->save();
-    $post=Post::find(1);
-    $post->delete();
+//    $post=Post::find(1);
+
+//    $post->delete();
+    
+    Post::destroy(2);
 
 
 
