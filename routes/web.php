@@ -29,8 +29,14 @@ Route::get('/', function () {
 //    dd($post);
 //    $post=Post::find(1);
 //    dd($post);
-    $post=Post::where('id','<',10)->orderBy('id','DESC')->get();
-    dd($post);
+//    $post=Post::where('id','<',10)->orderBy('id','DESC')->get();
+//    dd($post);
+    $post=Post::find(1);
+    $post->update([
+        'title'=>'updated title',
+        'content'=>'updated content',
+    ]);
+
 
 
 
